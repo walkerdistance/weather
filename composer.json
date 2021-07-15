@@ -1,0 +1,30 @@
+{
+    "name": "walkerdistance\/weather",
+    "description": "第一次编写SDK",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "walker",
+            "email": "walkerdistance@163.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Walkerdistance\\Weather\\": "src"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0",
+        "mockery/mockery": "^1.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Walkerdistance\\Weather\\ServiceProvider"
+            ]
+        }
+    }
+}
